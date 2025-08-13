@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register</title>
+  <style>
+    body { font-family: Arial; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+    form { background: #f9f9f9; padding: 20px; border-radius: 10px; width: 300px; }
+    input, select, button { width: 100%; margin: 10px 0; padding: 10px; border-radius: 5px; border: 1px solid #ccc; }
+    button { background: #4caf50; color: #fff; border: none; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <form>
+    <h2>Register</h2>
+    <input type="text" placeholder="First Name" required>
+    <input type="text" placeholder="Last Name" required>
+    <input type="email" placeholder="Email" required>
+    <input type="password" placeholder="Password" 
+           pattern="^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])\S{8,}$" 
+           title="Min 8 chars, with number, letter & symbol" required>
+    <input type="password" placeholder="Re-type Password" required>
+    <input type="text" placeholder="Contact" maxlength="10" required>
+    <select required>
+      <option value="" disabled selected>Select Gender</option>
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select>
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>

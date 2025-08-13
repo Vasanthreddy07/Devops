@@ -1,0 +1,40 @@
+div{
+    height: 100px;
+    width: 50px;
+    background-color: antiquewhite;
+    border:  double black;
+display: inline-block;
+}
+#con{height: 300px;
+    width: 600px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+
+align-items: flex-start;
+    
+}
+#div1{
+    background-color: aqua;
+
+}
+#div3{
+    background-color: rebeccapurple;
+
+
+}  
+#div2{
+    background-color:orangered;
+    height: 200px;
+    flex-grow: 1;
+}
+#div4{
+    background-color: sienna;
+    
+
+}
+
+#div5{
+    background-color: blanchedalmond;
+}
